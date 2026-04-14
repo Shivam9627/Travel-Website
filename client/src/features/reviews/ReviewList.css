@@ -1,0 +1,19 @@
+.review-list__title {
+  font-family: var(--font-display);
+  margin: 2rem 0 1rem;
+}
+
+.review-list__grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.review-list__hint,
+.review-list__err,
+.review-list__empty {
+  color: var(--muted);
+}
+
+.review-list__err {
+  color: #b91c1c;
+}

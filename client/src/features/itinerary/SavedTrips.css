@@ -1,0 +1,35 @@
+.saved-trips {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.saved-trips h2 {
+  margin-bottom: 1rem;
+}
+
+.saved-trips ul {
+  list-style: none;
+  padding: 0;
+}
+
+.saved-trips li {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 0;
+}
+
+.saved-trips li:last-child {
+  border-bottom: none;
+}
+
+.saved-trips a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.saved-trips a:hover {
+  text-decoration: underline;
+}

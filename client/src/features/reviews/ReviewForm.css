@@ -1,0 +1,42 @@
+.review-form {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(145deg, rgba(15, 118, 110, 0.06), rgba(255, 255, 255, 0.9));
+  border: 1px solid var(--border);
+}
+
+.review-form__title {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+}
+
+.review-form__status {
+  margin: 0 0 1rem;
+  color: var(--teal-700);
+  font-size: 0.95rem;
+}
+
+.review-form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  font: inherit;
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.review-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
