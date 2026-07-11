@@ -5,7 +5,7 @@ import { useAuth } from '../hooks/useAuth';
 import './Navbar.css';
 
 const Navbar = () => {
-  const { isSignedIn } = useAuth();
+  const { isSignedIn, mode, signOut } = useAuth();
   const [open, setOpen] = useState(false);
 
   const close = () => setOpen(false);
@@ -52,7 +52,13 @@ const Navbar = () => {
 
           {isSignedIn ? (
             <div className="nav__user">
-              <UserButton afterSignOutUrl="/" />
+              {mode === 'clerk' ? (
+                <UserButton afterSignOutUrl="/" />
+              ) : (
+                <button type="button" className="nav__cta nav__cta--ghost" onClick={() => { signOut(); close(); }}>
+                  Sign out
+                </button>
+              )}
             </div>
           ) : (
             <div className="nav__auth-btns">

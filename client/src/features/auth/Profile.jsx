@@ -9,11 +9,11 @@ const Profile = () => {
   const [err, setErr] = useState(null);
 
   useEffect(() => {
-    if (!isSignedIn) return;
+    if (!isSignedIn || mode !== 'clerk') return;
     fetchUserProfile()
       .then(setServer)
       .catch((e) => setErr(e.message));
-  }, [isSignedIn]);
+  }, [isSignedIn, mode]);
 
   if (!isLoaded) {
     return <div className="page page-loading">Loading…</div>;
